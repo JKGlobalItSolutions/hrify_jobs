@@ -21,6 +21,11 @@ const Favorites = () => {
             </div>
           </section>
 
+
+
+
+          
+
           <div className="col-lg-12 col-sm-6 col-md-6 div position-relative">
             <button data-bs-toggle="modal">
               <img

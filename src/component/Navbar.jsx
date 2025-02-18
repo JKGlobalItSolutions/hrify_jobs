@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import '../stylesheet/navbar.css';
+
 
 // navimg
 import logo from '../img/navimg/nav_logo.png';
@@ -9,8 +9,8 @@ import chat from '../img/navimg/chat.png';
 import location from '../img/navimg/location.png';
 import person from '../img/navimg/person.png';
 
-const Navbar = ({usertoggle ,userformtoggle }) => {
-  
+const Navbar = ({ usertoggle, userformtoggle }) => {
+
 
 
 
@@ -43,13 +43,18 @@ const Navbar = ({usertoggle ,userformtoggle }) => {
 
             <li className="nav-item"> <Link to="/" className=" text-black  text-decoration-none"> Home </Link> </li>
             <li className="nav-item"> <Link to="/aboutus" className=" text-black  text-decoration-none"> About Us </Link> </li>
-            <li className="nav-item"> <Link to="/" className=" text-black  text-decoration-none"> Jobs </Link> </li>
+            <li className="nav-item"> <Link to="/jobspage" className=" text-black  text-decoration-none"> Jobs </Link> </li>
             <li className="nav-item"> <Link to="/" className=" text-black  text-decoration-none"> Categories </Link> </li>
             <li className="nav-item"> <Link to="/" className=" text-black  text-decoration-none"> Blogs </Link> </li>
             <li className="nav-item"> <Link to="/" className=" text-black  text-decoration-none"> Contact Us </Link> </li>
-            <li className="nav-item"   onClick={userformtoggle} > <Link to="/"    className="  btn nav_loginbtn text-white text-decoration-none"> Login </Link> </li>
-            <li className="nav-item"> <Link to="/addjobpost"   className="btn nav_loginbtn text-white text-decoration-none"> Add Job Post </Link></li>
+
+            {/* login to ture is show */}
             
+            {false ? (<li className="nav-item" onClick={userformtoggle} > <Link to="/" className="  btn nav_loginbtn text-white text-decoration-none"> Login </Link> </li>) : null}
+
+
+            <li className="nav-item"> <Link to="/addjobpost" className="btn nav_loginbtn text-white text-decoration-none"> Add Job Post </Link></li>
+
             {/* Icons */}
             <li className="nav-item"> <Link to="/Favorite" className="  text-decoration-none"> <img src={fav} alt="Favorite" className="icon-img" /> </Link> </li>
             <li className="nav-item"> <Link to="/notifications" className="  text-decoration-none"> <img src={chat} alt="Chat" className="icon-img" /> </Link> </li>
