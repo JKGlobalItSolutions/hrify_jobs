@@ -15,7 +15,10 @@
 }
 .about_hero_text{
    
-    background: linear-gradient(180deg, #00556E 0%, #00A4D4 100%);
+    background: linear-gradient(180deg, #00556E 0%, #00A4D4 100%) !important;
+    box-shadow: 0px 0px 44px 44px #0000008C inset;
+  
+
 
 }
 
@@ -24,4 +27,45 @@
     height: auto;
   }
   
+/* about main -img */
 
+.feature-card {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #3498db;
+}
+.feature-card p {
+  color: #7f8c8d;
+  margin-bottom: 0;
+}
+.container {
+  padding: 80px 15px;
+}
+.question{ 
+  width: 20px !important;
+  height: 20px;
+  background-color: rgb(83, 83, 226);
+  border-radius: 50px;
+}
+
+
+.list-unstyled li {
+  font-size: 20px !important;
+}
