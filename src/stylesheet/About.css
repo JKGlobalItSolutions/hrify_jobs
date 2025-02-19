@@ -8,19 +8,41 @@
 
 .about-shadow{
     width: 100%;
-    height: 200px !important;
-    box-shadow: 0px 0px 44px 0px #0000008C inset;
-    border: 1px solid black;
+    
+
+ 
 
 }
 .about_hero_text{
    
-    background: linear-gradient(180deg, #00556E 0%, #00A4D4 100%) !important;
-    box-shadow: 0px 0px 44px 44px #0000008C inset;
+ 
+    box-shadow: 0px 0px 44px 0px #0000008C inset;
   
 
 
 }
+
+
+.hero-btn{
+  width: 176.71359252929688;
+  height: 41.57119369506836;
+  gap: 9.29px;
+  border-radius: 27.86px;
+  padding-top: 9.29px;
+  padding-right: 27.86px;
+  padding-bottom: 9.29px;
+  padding-left: 27.86px;
+  background: #0080A7;
+  color: white;
+  
+
+}
+
+
+
+
+
+
 
 .img-fluid {
     width: 100%;
@@ -56,7 +78,7 @@ h3 {
   margin-bottom: 0;
 }
 .container {
-  padding: 80px 15px;
+  padding: 20px 15px;
 }
 .question{ 
   width: 20px !important;
@@ -68,4 +90,45 @@ h3 {
 
 .list-unstyled li {
   font-size: 20px !important;
+}
+
+
+@media (max-width: 576px) {
+  .HRIFY_JOBS ul li {
+  font-size: 10px !important;
+  }
+}
+
+.list-group-item {
+  pointer-events: none;
+  
+}
+.container-fuild,
+.container {
+  background-color: transparent !important;
+}
+
+.model_img  {
+  width: 100% !important;
+height: 70vh !important;
+}
+
+@media screen and (max-width: 576px) {
+  .model_img  {
+    width: 100% !important;
+  height: 30vh !important;
+  }
+}
+
+
+.Jobs_head{
+  color:rgb(20, 122, 195);
+ 
+
+
+}
+
+.question_btn{
+  background: linear-gradient(180deg, #0080A7 0%, #00A4D4 100%);
+
 }
