@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+.banner {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+   
+    box-shadow: 0px 0px 44px 0px #0000008C inset;
+
+}
+
+
+
+
+
+
+.highlight {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (min-width: 576px) { /* Small devices (Tablets) */
+    .job-banner {
+        padding: 50px 30px;
+    }
+}
+
+@media (min-width: 768px) { /* Medium devices (Laptops) */
+    .job-banner {
+        padding: 60px 40px;
+    }
+}
+
+@media (min-width: 992px) { /* Large devices (Desktops) */
+    .job-banner {
+        padding: 80px 50px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.job-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #ddd; /* Outer Border */
+    box-shadow: 0px 0px 14px 0px #0000004D; /* Shadow Effect */
+}
+
+.company_logo {
+    background: linear-gradient(to right, #005a75, #007b8f) !important;
+}
+
+
+.highlight {
+    color: #0080A7;
+    font-weight: bold;
+}
+.deadline {
+    color: red;
+    font-weight: bold;
+}
+.btn-custom {
+    background-color: #0080A7;
+    color: white;
+    border-radius: 5px;
+}
+.btn-custom:hover {
+    background-color: #005a75;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+                                                /* jobapplypage css */
+
+                                                .job-card {
+                                                    background-color: #f5f5f5;
+                                                    border-radius: 10px;
+                                                    padding: 20px;
+                                                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                                                }
+                                                .company-logo {
+                                                    width: 80px;
+                                                    height: 80px;
+                                                    background-color: #ddd;
+                                                    border-radius: 50%;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    font-size: 14px;
+                                                    color: #666;
+                                                }
+                                                .deadline {
+                                                    color: red;
+                                                    font-weight: bold;
+                                                }
+                                                .highlight {
+                                                    color: #007bff;
+                                                    font-weight: bold;
+                                                }
+
+
+
+
+                                                /* form input  */
+
+
+                                                
+                                                

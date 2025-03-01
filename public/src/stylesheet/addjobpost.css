@@ -1,0 +1,129 @@
+body {
+    background-color: #f8f9fa;
+}
+
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+    background-color: #0081A7;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.btn-custom:hover {
+    background-color: #005f6a;
+}
+
+.form-title {
+    /* width: 860px !important; */
+    
+    position: relative;
+    background-color: #0081A7;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: linear-gradient(180deg, #0081A7 0%, #015670 100%);
+   
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+   
+   
+   
+   
+   
+    /* margin-left: 280px !important; */
+  
+    
+}
+
+@media (max-width: 500px) {
+
+    .form-title {
+        width: 300px;
+        background-color: #0081A7;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: linear-gradient(180deg, #0081A7 0%, #015670 100%);
+        margin-left: 0px;
+    }
+
+}
+
+/* tablet  */
+
+@media (min-width: 577px) and (max-width: 1024px) {
+
+    .form-title {
+        width: 640px;
+        background-color: #0081A7;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: linear-gradient(180deg, #0081A7 0%, #015670 100%);
+        margin-left: 0px;
+    }
+
+
+}
+
+/* Laptop (1024px - 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+
+    .form-title {
+        width: 860px;
+        background-color: #0081A7;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: linear-gradient(180deg, #0081A7 0%, #015670 100%);
+        margin-left: 0px;
+    }
+
+}
+
+/* Desktop (1366px and above) */
+@media (min-width: 1366px) {
+
+    .form-title {
+        width: 300px;
+        background-color: #0081A7;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: linear-gradient(180deg, #0081A7 0%, #015670 100%);
+        margin-left: 0px;
+    }
+
+}
+
+.input-group-text {
+    background-color: #0081A7;
+    color: white;
+
+
+}
