@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 import footer from "../img/Footer-img/Frame 721.png";
 import img1 from "../img/Footer-img/1.png";
@@ -11,9 +12,9 @@ const Footer = () => {
     return (
         <footer className="footer bg-dark text-light py-4">
             <div className="container">
-                <div className="row text-center text-md-start gap-3">
+                <div className="row text-center text-md-start gap-3  ">
                     {/* Footer Links Section */}
-                    <div className="col-lg-2 col-md-6 col-sm-6 mb-3">
+                    <div className="col-lg-2 col-md-6 col-sm-6 mb-3 g-2  ">
                         <h5 className="fs-5 mt-3">Tailored Job Matches</h5>
                         <ul className="list-unstyled text-white-50 lh-lg">
                             <li>Home</li>
@@ -22,9 +23,10 @@ const Footer = () => {
                             <li>Categories</li>
                             <li>Blogs</li>
                             <li>Contact Us</li>
+                            <li>Dullat Pant</li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-6 col-sm-6 mb-3">
+                    <div className="col-lg-2 col-md-6 col-sm-6 mb-3 g-2">
                         <h5 className="fs-5 mt-3">Job Seeker Section</h5>
                         <ul className="list-unstyled text-white-50 lh-lg">
                             <li>Browse Jobs</li>
@@ -33,7 +35,7 @@ const Footer = () => {
                             <li>Career Tips</li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-6 col-sm-6 mb-3">
+                    <div className="col-lg-2 col-md-6 col-sm-6 mb-3 g-2">
                         <h5 className="fs-5 mt-3">Employer Section</h5>
                         <ul className="list-unstyled text-white-50 lh-lg">
                             <li>Post a Job</li>
@@ -42,7 +44,7 @@ const Footer = () => {
                             <li>Pricing & Plans</li>
                         </ul>
                     </div>
-                    <div className="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div className="col-lg-3 col-md-6 col-sm-6 mb-3 g-2">
                         <h5 className="fs-5 mt-3">Support & Resources</h5>
                         <ul className="list-unstyled text-white-50 lh-lg">
                             <li>FAQs</li>
@@ -53,7 +55,7 @@ const Footer = () => {
                     </div>
 
                     {/* Logo & Social Icons Section */}
-                    <div className="col-lg-2 text-center mt-4">
+                    <div className="col-lg-2 text-center mt-4 g-2">
                         <img src={footer} alt="HRIFY Jobs" className="footer-logo img-fluid mb-3" />
                         <div className="d-flex justify-content-center gap-3">
                             <img src={img1} alt="Facebook" className="logo img-fluid" style={{ width: "40px" }} />
@@ -68,7 +70,7 @@ const Footer = () => {
                 {/* Footer Bottom Text */}
                 <div className="row mt-2 text-center">
                     <div className="col-12 text-start">
-                        <p className="mb-0 text-white-50">&copy; 2025 HRIFY Jobs. All Rights Reserved.</p>
+                        <p className="mb-0  text-white-50">&copy; 2025 HRIFY Jobs. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

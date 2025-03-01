@@ -3,10 +3,12 @@ import job from "../img/Favorites-img/OBJECTS.png";
 import img1 from "../img/Favorites-img/Frame 1732.png";
 
 const Favorites = () => {
-
-
   return (
     <div>
+
+
+
+
 
       <div className="container-fiuld ">
         <div className="row justify-content-center gap-3">
@@ -18,32 +20,26 @@ const Favorites = () => {
 
             </div>
           </section>
-          <img
-            className="w-full opt-btn position-absolute"
-            type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"
-            style={{
-              top: '10px',
-              right: window.innerWidth >= 992 ? '180px' : '50px',
-            }}
-            src={img1}
-            alt=""
-          />
 
 
-          <div >
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card opcation_hide position-absolute card-body" style={{ width: 300 }}>
-                <div className=" d-flex  gap-3">
-                  <h3 className='fs-6'>Job Type</h3>
-                  <input type="text" />
-                </div>
-                <div className=" d-flex  gap-3">
-                  <h3 className='fs-6'>Job Type</h3>
-                  <input type="text" />
-                </div>
-              </div>
-            </div>
+
+
+          
+
+          <div className="col-lg-12 col-sm-6 col-md-6 div position-relative">
+            <button data-bs-toggle="modal">
+              <img
+                className="w-full opt-btn position-absolute"
+                style={{
+                  top: '10px',
+                  right: window.innerWidth >= 992 ? '180px' : '50px',
+                }}
+                src={img1}
+                alt=""
+              />
+            </button>
           </div>
+
 
 
           {/*  */}
