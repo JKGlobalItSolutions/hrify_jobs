@@ -18,9 +18,9 @@ import Jobspage from "./pages/Jobspage";
 import Jobdetailspage from "./pages/Jobdetailspage";
 import Jobapplypage from "./pages/Jobapplypage";
 import Blogspage from "./pages/Blogspage";
-// import Contactus from "./pages/Contactus";
 import Contactus from "./pages/Contactus";
 import Categories from "./pages/Categories"
+
 
 
 
@@ -90,13 +90,11 @@ const App = () => {
         < Route path="/jobdetailspage" element={<Jobdetailspage />} />
         < Route path="/jobapplypage" element={< Jobapplypage />} />
         < Route path="/Blogspage" element={< Blogspage />} />
+
         < Route path="/Categories" element={< Categories />} />
 
         {/* <Route path="/contactus" element={<Contactus/>}/> */}
         <Route path="/contactus" element={<Contactus />} />        
-
-
-
 
       </Routes>
       <Footer />
