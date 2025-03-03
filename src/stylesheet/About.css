@@ -9,22 +9,38 @@
 .about-shadow{
     width: 100%;
     height: 200px !important;
-    box-shadow: 0px 0px 44px 0px #0000008C inset;
-    border: 1px solid black;
+  
 
 }
 .about_hero_text{
    
-    background: linear-gradient(180deg, #00556E 0%, #00A4D4 100%) !important;
-    box-shadow: 0px 0px 44px 44px #0000008C inset;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%) !important;
+    box-shadow: 0px 0px 44px 0px #0000008C inset;
   
 
 
 }
 
+.about_hero_btn{
+  width: 176.71359252929688;
+height: 41.57119369506836;
+gap: 9.29px;
+border-radius: 27.86px;
+padding-top: 9.29px;
+padding-right: 27.86px;
+padding-bottom: 9.29px;
+padding-left: 27.86px;
+color: white;
+background: rgba(0, 128, 167, 1);
+box-shadow: 0px 0px 18.57px 0px rgba(0, 0, 0, 0.6) inset;
+
+
+}
+
 .img-fluid {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-top: -70px;
   }
   
 /* about main -img */
