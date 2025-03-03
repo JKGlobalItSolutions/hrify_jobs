@@ -2,12 +2,22 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+import applyAfterImg from '../img/jobapplyimg/applyafter1.png';
+import applyAfterImg2 from '../img/jobapplyimg/applyafter2.png';
+
+
 
 
 const Jobapplypage = () => {
+
+
     return (
 
+
+
+
         <div>
+
 
             {/* Header Section */}
 
@@ -82,7 +92,7 @@ const Jobapplypage = () => {
 
 
 
-            <div class="container mt-5">
+            <div class="container mt-5 mb-5">
                 <div class="card p-4 shadow">
                     <h3 class="text-primary">Personal Information</h3>
                     <form>
@@ -99,24 +109,26 @@ const Jobapplypage = () => {
                                 <label class="form-label">Phone Number</label>
                                 <input type="text" class="form-control" placeholder="Enter your phone number" />
                             </div>
+
                             <div class="col-md-6">
                                 <label class="form-label">Current Employment Status</label>
-                                <select class="form-select">
-                                    <option selected>Select your status</option>
-                                    <option>Employed</option>
-                                    <option>Unemployed</option>
-                                    <option>Freelancer</option>
-                                </select>
+
+                                <div class="custom-select-wrapper">
+                                    <select class="form-select custom-select">
+                                        <option selected>Select your status </option>
+                                        <option>Employed</option>
+                                        <option>Unemployed</option>
+                                        <option>Freelancer</option>
+                                    </select>
+                                </div>
                             </div>
+
+
                             <div class="col-md-6">
+                                <input class="form-check-input me-2 rounded-5" type="checkbox" id="terms" />
                                 <label class="form-label">LinkedIn/Portfolio</label>
                                 <input type="text" class="form-control" placeholder="Enter profile link" />
                             </div>
-
-                            {/* <div class="col-md-6">
-                                <label class="form-label">Upload Resume</label>
-                                <input type="file" class="form-control" />
-                            </div> */}
 
 
 
@@ -127,6 +139,9 @@ const Jobapplypage = () => {
                                     <label class="input-group-text btn btn-primary" for="resumeUpload">📂</label>
                                 </div>
                             </div>
+
+
+
 
 
                             <div class="col-md-6">
@@ -169,10 +184,71 @@ const Jobapplypage = () => {
                 </div>
             </div>
 
+            {/* ---------------------------------------------------------------- */}
+            {/* apply after  */}
 
 
+            {true ? (
+                <div className="container mb-4">
+                    <div className="row justify-content-center">
 
+                        {/* Image Section - Centered & Responsive */}
+                        <div className="col-12 d-flex justify-content-center align-items-center flex-wrap gap-3">
+                            <img
+                                src={applyAfterImg}
+                                alt="Description"
+                                className="img-fluid"
+                                style={{ width: "194px", height: "175.95px" }}
+                            />
 
+                            <img
+                                src={applyAfterImg2}
+                                alt="Description"
+                                className=" idea_img"
+                                style={{ width: "94px", height: "94px", marginTop: "-120px", marginLeft: "-40px" }}
+                            />
+                        </div>
+
+                        {/* Thank You Message */}
+                        <div className="col-12 text-center mt-4">
+                            <p style={{
+                                maxWidth: "90%",
+                                fontWeight: 400,
+                                fontSize: "21px",
+                                lineHeight: "35px",
+                                textAlign: "center",
+                                margin: "0 auto"
+                            }}>
+                                Thank you for applying to the
+                                <span style={{
+                                    fontWeight: 600,
+                                    color: "#0080A7",
+                                    marginLeft: "5px"
+                                }}>
+                                    Software Engineer
+                                </span>
+                                &nbsp;position at TCS! We’ve received your application, and our team will review it shortly.
+                            </p>
+                        </div>
+
+                        {/* Email Confirmation Message */}
+                        <div className="col-12 text-center mt-3">
+                            <p style={{
+                                maxWidth: "90%",
+                                fontFamily: "Roboto, sans-serif",
+                                fontWeight: 500,
+                                fontSize: "28px",
+                                lineHeight: "32px",
+                                textAlign: "center",
+                                margin: "0 auto"
+                            }}>
+                                You will receive an email confirmation within the next 24 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            ) : null}
 
 
         </div>

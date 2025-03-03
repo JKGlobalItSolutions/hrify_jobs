@@ -17,6 +17,7 @@ import Notifications from "./pages/Notifications"
 import Jobspage from "./pages/Jobspage";
 import Jobdetailspage from "./pages/Jobdetailspage";
 import Jobapplypage from "./pages/Jobapplypage";
+import Blogspage from "./pages/Blogspage";
 
 
 
@@ -25,8 +26,9 @@ import Jobapplypage from "./pages/Jobapplypage";
 import './stylesheet/navbar.css';
 import './stylesheet/style.css';
 import './stylesheet/Footer.css';
-import './stylesheet/Favorties.css'
-import './stylesheet/jobpage.css'
+import './stylesheet/Favorties.css';
+import './stylesheet/jobpage.css';
+
 
 
 
@@ -83,6 +85,8 @@ const App = () => {
         < Route path="/jobspage" element={<Jobspage />} />
         < Route path="/jobdetailspage" element={<Jobdetailspage />} />
         < Route path="/jobapplypage" element={< Jobapplypage />} />
+        < Route path="/Blogspage" element={< Blogspage />} />
+
 
 
       </Routes>
