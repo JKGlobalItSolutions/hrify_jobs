@@ -168,12 +168,19 @@ const Jobspage = () => {
 
                 {/* link navigate */}
 
-                <div className="container-fluid  mb-5">
+                <div className="container-fluid  mt-2 mb-3">
                     <div className="row ">
 
-                        <div className="col-lg-12 link_navigate mt-2 ">
+                        <div className="col-lg-12 link_navigate ">
 
-                            <h5 className="nav-item  text-secondary"> Jobs <span> <i class="fa-solid fa-greater-than  "></i>  </span> <Link to="/" className="text-decoration-none"> Home </Link> </h5>
+
+                            <h5 className="nav-item text-secondary">
+                                Jobs
+                                <span> <i className="fa-solid fa-greater-than" style={{ fontSize: "10px" }}></i> </span>
+                                <Link to="/" className="text-decoration-none">Home</Link>
+                            </h5>
+
+
 
 
                         </div>
@@ -430,61 +437,70 @@ const Jobspage = () => {
                     {/* job card section */}
 
 
-                    <div className="col-lg-8">
+                    <div className="col-lg-8  mb-5">
                         <div className="container">
                             <div className="row justify-content-center">
 
-                                {/* Map through Jobspagedata to display job cards */}
+                                {/* Map through Jobspagedata to display job cards    and click to navigate the jobdetailspage for using link */}
+
                                 {Jobspagedata.map((job, index) => (
                                     <div key={index} className="col-lg-6 col-md-6 col-sm-12 mt-4">
-                                        <div className="card shadow-lg bg-white rounded position-relative py-2">
-                                            <div className=" d-flex">
-                                                <h5 className=" mt-1 position-absolute" style={{ top: '10px', right: '10px', border: '0px', backgroundColor: 'none' }} aria-label="Close">   <i class="fa-regular fa-heart "></i></h5>
-                                                <span className='ms-3 text-secondary' ><img src={Jobspageclockicon} className='Jobspageclockicon' alt="" /> posted- {job.posted_day} </span>
-                                            </div>
+                                        {/* Link wraps only the card, excluding buttons */}
+                                        <Link to={"/jobdetailspage"} className='text-decoration-none'>
+                                            <div className="card shadow-lg bg-white rounded position-relative py-2">
+                                                <div className="d-flex">
+                                                    <h5 className="mt-1 position-absolute" style={{ top: '10px', right: '10px', border: '0px', backgroundColor: 'none' }} aria-label="Close">
+                                                        <i className="fa-regular fa-heart"></i>
+                                                    </h5>
+                                                    <span className='ms-3 text-secondary'>
+                                                        <img src={Jobspageclockicon} className='Jobspageclockicon' alt="" /> posted- {job.posted_day}
+                                                    </span>
+                                                </div>
 
-                                            <div className="card-body text-center mt-4">
-                                                <div className="d-flex justify-content-center mb-3">
-                                                    <div className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: '171px', height: '171px', backgroundColor: 'rgba(217, 217, 217, 1)' }}>
-                                                        <span>Company Logo</span>
+                                                <div className="card-body text-center mt-4">
+                                                    <div className="d-flex justify-content-center mb-3">
+                                                        <div className="rounded-circle d-flex align-items-center justify-content-center" style={{ width: '171px', height: '171px', backgroundColor: 'rgba(217, 217, 217, 1)' }}>
+                                                            <span>Company Logo</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className="d-flex text-start px-3">
+                                                        <div className="d-grid">
+                                                            <b>Job Title:</b>
+                                                            <b>Job Type:</b>
+                                                            <b>Company Name:</b>
+                                                            <b>Location:</b>
+                                                            <b>Salary:</b>
+                                                            <b>Gender:</b>
+                                                        </div>
+                                                        <div className="ms-3">
+                                                            <p className="mb-1">{job.title}</p>
+                                                            <p className="mb-1">{job.type}</p>
+                                                            <p className="mb-1">{job.company}</p>
+                                                            <p className="mb-1">{job.location}</p>
+                                                            <p className="mb-1">{job.salary}</p>
+                                                            <p className="mb-1">{job.gender}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="d-flex text-start px-3">
-                                                    <div className="d-grid">
-                                                        <b>Job Title:</b>
-                                                        <b>Job Type:</b>
-                                                        <b>Company Name:</b>
-                                                        <b>Location:</b>
-                                                        <b>Salary:</b>
-                                                        <b>Gender:</b>
-                                                    </div>
-                                                    <div className="ms-3">
-                                                        <p className="mb-1">{job.title}</p>
-                                                        <p className="mb-1">{job.type}</p>
-                                                        <p className="mb-1">{job.company}</p>
-                                                        <p className="mb-1">{job.location}</p>
-                                                        <p className="mb-1">{job.salary}</p>
-                                                        <p className="mb-1">{job.gender}</p>
-                                                    </div>
-                                                </div>
+                                                <span className="badge position-absolute Expiry p-2" style={{ top: '375px', right: '10px' }}>
+                                                    Expiry in <br /> 10 Days
+                                                </span>
                                             </div>
-                                            <span className="badge position-absolute Expiry p-2" style={{ top: '375px', right: '10px' }}>
-                                                Expiry in <br /> 10 Days
-                                            </span>
-                                            <div className="d-flex flex-column flex-md-row">
+                                        </Link>
 
-                                                <button className="btn Jobspagebtn  text-white flex-grow-1 mb-2 mb-md-0" style={{ padding: '12px', fontWeight: 'bold', backgroundColor: '#0080A7', borderRadius: '0px' }}>
-                                                    View Job
-                                                </button>
-
-                                                <button className="btn Jobspagebtn btn-dark flex-grow-1 mb-2 mb-md-0" style={{ padding: '12px', fontWeight: 'bold', borderRadius: '0px' }}>
-                                                    Apply Now
-                                                </button>
-
-                                            </div>
+                                        {/* Separate Buttons (Not Wrapped in Link) */}
+                                        <div className="d-flex flex-column flex-md-row">
+                                            <button className="btn Jobspagebtn text-white flex-grow-1 mb-2 mb-md-0" style={{ padding: '12px', fontWeight: 'bold', backgroundColor: '#0080A7', borderRadius: '0px' }}>
+                                                View Job
+                                            </button>
+                                            <button className="btn Jobspagebtn btn-dark flex-grow-1 mb-2 mb-md-0" style={{ padding: '12px', fontWeight: 'bold', borderRadius: '0px' }}>
+                                                Apply Now
+                                            </button>
                                         </div>
                                     </div>
                                 ))}
+                                
+
 
                             </div>
                         </div>
@@ -500,7 +516,7 @@ const Jobspage = () => {
 
 
 
-        </div>
+        </div >
     )
 }
 

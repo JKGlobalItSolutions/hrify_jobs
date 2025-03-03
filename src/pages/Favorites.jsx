@@ -3,8 +3,6 @@ import job from "../img/Favorites-img/OBJECTS.png";
 import img1 from "../img/Favorites-img/Frame 1732.png";
 
 const Favorites = () => {
-
-
   return (
     <div>
 
@@ -23,7 +21,6 @@ const Favorites = () => {
             </div>
           </section>
 
-<<<<<<< Updated upstream
 
 
 
@@ -41,46 +38,7 @@ const Favorites = () => {
                 alt=""
               />
             </button>
-=======
-          <div className="col-lg-12 col-sm-6 col-md-6 div position-relative py-2 ">
-
-            <img
-              className="w-full opt-btn position-absolute"
-              type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"
-              style={{
-                top: '10px',
-                
-                right: window.innerWidth >= 992 ? '180px' : '50px',
-
-              }}
-              src={img1}
-              alt=""
-            />
-
->>>>>>> Stashed changes
           </div>
-
-         
-          <div >
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card opcation_hide position-absolute card-body" style={{width :300}}>
-              <div className=" d-flex  gap-3">
-              <h3 className='fs-6'>Job Type</h3>
-              <input type="text" />
-             </div>
-             <div className=" d-flex  gap-3">
-              <h3 className='fs-6'>Job Type</h3>
-              <input type="text" />
-             </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
 
 
 

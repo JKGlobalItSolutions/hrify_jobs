@@ -15,6 +15,8 @@ import Addjobpost from "./pages/Addjobpost";
 import Favorites from "./pages/Favorites";
 import Notifications from "./pages/Notifications"
 import Jobspage from "./pages/Jobspage";
+import Jobdetailspage from "./pages/Jobdetailspage";
+import Jobapplypage from "./pages/Jobapplypage";
 
 
 
@@ -23,8 +25,8 @@ import Jobspage from "./pages/Jobspage";
 import './stylesheet/navbar.css';
 import './stylesheet/style.css';
 import './stylesheet/Footer.css';
-import './stylesheet/Favorties.css' 
-import './stylesheet/jobpage.css' 
+import './stylesheet/Favorties.css'
+import './stylesheet/jobpage.css'
 
 
 
@@ -55,11 +57,11 @@ const App = () => {
 
 
 
-// jobpage send the props
+  // jobpage send the props
   const notifications = [
     { category: "IT Jobs", message: "Software Engineer Opening", time: "2 hours ago" },
     { category: "Marketing", message: "Digital Marketing Role", time: "5 hours ago" },
-];
+  ];
 
 
 
@@ -78,7 +80,10 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/Favorite" element={<Favorites />} />
-        < Route path="/jobspage" element={<Jobspage  />} />
+        < Route path="/jobspage" element={<Jobspage />} />
+        < Route path="/jobdetailspage" element={<Jobdetailspage />} />
+        < Route path="/jobapplypage" element={< Jobapplypage />} />
+
 
       </Routes>
       <Footer />

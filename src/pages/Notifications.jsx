@@ -46,8 +46,8 @@ const Notifications = () => {
                     </div>
                 </section>
 
-                <div className="col-lg-12 col-sm-6 col-md-6 div position-relative py-3 mt-5">
-                    
+                <div className="col-lg-12 col-sm-6 col-md-6 div position-relative">
+                    <button data-bs-toggle="modal">
                         <img
                             className="w-full opt-btn position-absolute"
                             style={{
@@ -57,7 +57,7 @@ const Notifications = () => {
                             src={img1}
                             alt=""
                         />
-                    
+                    </button>
                 </div>
 
 
