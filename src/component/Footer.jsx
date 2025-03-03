@@ -55,14 +55,14 @@ const Footer = () => {
                     </div>
 
                     {/* Logo & Social Icons Section */}
-                    <div className="col-lg-2 text-center mt-4 g-2">
+                    <div className="col-lg-2 text-center mt-5 g-2">
                         <img src={footer} alt="HRIFY Jobs" className="footer-logo img-fluid mb-3" />
-                        <div className="d-flex justify-content-center gap-3">
-                            <img src={img1} alt="Facebook" className="logo img-fluid" style={{ width: "40px" }} />
-                            <img src={img2} alt="Twitter" className="logo img-fluid" style={{ width: "40px" }} />
-                            <img src={img3} alt="LinkedIn" className="logo img-fluid" style={{ width: "40px" }} />
-                            <img src={img4} alt="Instagram" className="logo img-fluid" style={{ width: "40px" }} />
-                            <img src={img5} alt="YouTube" className="logo img-fluid" style={{ width: "40px" }} />
+                        <div className="d-flex justify-content-center my-5 pt-3 gap-3">
+                            <img src={img1} alt="Facebook" className="logo img-fluid" style={{ width: "60px" , height: "60px" }} />
+                            <img src={img2} alt="Twitter" className="logo img-fluid" style={{ width: "60px" , height: "60px" }} />
+                            <img src={img3} alt="LinkedIn" className="logo img-fluid" style={{ width: "60px" , height: "60px" }}/>
+                            <img src={img4} alt="Instagram" className="logo img-fluid" style={{ width: "60px" , height: "60px" }} />
+                            <img src={img5} alt="YouTube" className="logo img-fluid"style={{ width: "60px" , height: "60px" }} />
                         </div>
                     </div>
                 </div>

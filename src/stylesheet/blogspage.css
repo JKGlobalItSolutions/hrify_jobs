@@ -1,3 +1,8 @@
+*{
+  font-family: Roboto;
+}
+
+
 /* Background and Padding */
 .banner {
   padding: 50px 20px;
@@ -165,4 +170,56 @@ p {
 
 .readmore {
   align-self: flex-end;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* contactUs page */
+
+.contact-container {
+
+  padding: 40px;
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); */
+}
+
+.contact-container label {
+  color: #0096b2;
+  font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea,
+.contact-container select {
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-container .btn-submit {
+  background-color: #0096b2;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container .btn-submit:hover {
+  background-color: #007A8C;
+}
+
+.contact-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
 }
