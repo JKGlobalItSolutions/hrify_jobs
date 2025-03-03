@@ -22,7 +22,7 @@ import Blogspage from "./pages/Blogspage";
 
 
 // stylesheet
-
+import './stylesheet/About.css'
 import './stylesheet/navbar.css';
 import './stylesheet/style.css';
 import './stylesheet/Footer.css';
