@@ -38,22 +38,6 @@ const AboutUs = () => {
     },
   ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   return (
     <div>
       {/* Hero Section */}
@@ -66,8 +50,8 @@ const AboutUs = () => {
                 "HRIFY Jobs is a job hiring platform where companies post vacancies and candidates apply for their dream jobs effortlessly."
               </p>
               <div>
-                <button className="btn btn-primary me-2">Explore Jobs</button>
-                <button className="btn btn-primary">Post a Job</button>
+                <button className="btn about_hero_btn  me-2">Explore Jobs</button>
+                <button className="btn  about_hero_btn">Post a Job</button>
               </div>
             </div>
             <div className="col-lg-6 text-center mt-5  mt-lg-3">
@@ -82,12 +66,12 @@ const AboutUs = () => {
       </div>
 
       {/* Logo and Slogan */}
-      <div className="container-fluid bg-light py-5">
+      <div className="container-fluid  my-2 position-absolute ">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-lg-12 col-md-6 col-sm-6">
-              <h2 className="fw-medium about_hero_text fs-4 d-flex d-lg-block flex-column align-items-center">
-                <img src={nav_logo} style={{ width: 151 }} alt="HRIFY Logo" className="mb-2" />
+              <h2 className="fw-medium  fs-4 d-flex d-lg-block flex-column align-items-center">
+                <img src={nav_logo} style={{ width: 151 }} alt="HRIFY Logo" className="" />
                 <span>-Your Gateway to Seamless Hiring & Career Growth</span>
               </h2>
             </div>
@@ -96,10 +80,10 @@ const AboutUs = () => {
       </div>
 
       {/* About HRIFY Jobs */}
-      <div className="container  Hiring_Career my-5">
-        <div className="row">
-          <div className="col-12">
-            <h2 className="fw-bold">HRIFY Jobs</h2>
+      <div className="container my-5    Hiring_Career ">
+        <div className="row my-2">
+          <div className="col-12 mt-5">
+          
             <p className="lead fs-4 mt-5">
               <strong>HRIFY Jobs</strong> is a dynamic <strong>job portal</strong> designed to bridge the gap between{" "}
               <strong>employers and job seekers</strong> by providing a seamless and efficient hiring experience. It serves as a{" "}
@@ -142,10 +126,10 @@ const AboutUs = () => {
         <h2 className="mb-4 text-primary">How It Works</h2>
         <div className="row">
           {steps.map((step, index) => (
-            <div key={index} className="col-md-2 col-sm-1  mb-5">
-              <div className="card border-primary h-100 shadow-sm">
-                <img src={step.image} alt={step.title} className="card-img-top img-fluid p-3" />
-                <div className="card-body">
+            <div key={index} className="col-md-2 col-sm-1 col-lg-3     mb-3">
+              <div className="card border-primary h-100 shadow-sm  align-items-center">
+                <img src={step.image} alt={step.title} className="card-img-top    img-fluid p-3"  style={{margin:"10px"}}/>
+                <div className="card-body ">
                   <h5 className="card-title">{step.title}</h5>
                   <p className="card-text">{step.description}</p>
                 </div>
@@ -165,7 +149,7 @@ const AboutUs = () => {
 
 
 
-          <div className="container my-5 p-4 bg-white">
+          <div className="container my-5 p-4 ">
             <div className="row align-items-center">
               {/* Left Content */}
               <div className="col-lg-6  mb-4 fs-4">
