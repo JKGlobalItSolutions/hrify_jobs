@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import img1 from "../img/Favorites-img/Frame 1732.png";
-// import img2 from "../img/Categories-img/hero_img.png";
-// import img3 from "../img/Categories-img/file-logo.png";
-// import img4 from "../img/Categories-img/option.png";
+import img1 from "../img/Favorites-img/Frame 1732.png";
+import img2 from "../img/Categories-img/1.png";
+import img3 from "../img/Categories-img/file-logo.png";
+import img4 from "../img/Categories-img/option.png";
 
 
 
@@ -108,7 +108,7 @@ const Categories = () => {
                             <button className="dream_job_btn btn btn-primary">Get Started</button>
                         </div>
                         <div className="col-12 col-lg-6 text-center">
-                            {/* <img src={img2} alt="Job Search" className="img-fluid" style={{ maxWidth: '500px' }} /> */}
+                            <img src={img2} alt="Job Search" className="img-fluid" style={{ maxWidth: '500px' }} />
                         </div>
                     </div>
                 </div>
@@ -137,12 +137,12 @@ const Categories = () => {
                                 />
                                 <span className="input-group-text"><i className="bi bi-search"></i></span>
                             </div>
-                            {/* <img
+                            <img
                                 className="opt-btn img-fluid"
                                 style={{ width: '40px', cursor: 'pointer' }}
                                 src={img1}
                                 alt="Options"
-                            /> */}
+                            />
                         </div>
                     </div>
                 </div>
@@ -259,10 +259,10 @@ const Categories = () => {
                                             <strong>Salary</strong>
                                         </div>
                                         <div className="d-grid ms-3 pt-0">
-                                            <p>{job.title}</p>
+                                            <p className='fs-6'>{job.title}</p>
                                             <p>{job.company}</p>
                                             <p>{job.location}</p>
-                                            <p>{job.salary}</p>
+                                            <p className='fs-6'>{job.salary}</p>
                                         </div>
                                     </div>
                                     <div className="d-flex flex-column flex-md-row justify-content-between ">
@@ -285,8 +285,8 @@ const Categories = () => {
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 text-lg-start text-start">
-                            <h2 class="fw-medium subscribe-title text-start">Get Hired Faster!</h2>
-                            <p class="fs-5">
+                            <h2 class="fw-medium subscribe-title  text-start">Get Hired Faster!</h2>
+                            <p class="fs-5 text-white">
                                 Be the first to know about new job openings that match your skills.
                                 Subscribe now and land your dream job with ease!
                             </p>
@@ -323,12 +323,12 @@ const Categories = () => {
                         <div className="col-md-6 mb-3">
                             <label>Company Logo</label>
                             <input className="form-control position-relative" />
-                            {/* <img src={img3} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} /> */}
+                            <img src={img3} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
                         </div>
                         <div className="col-md-6 mb-3">
                             <label>Job Location</label>
                             <input type="text" className="form-control  position-relative" />
-                            {/* <img src={img4} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} /> */}
+                            <img src={img4} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
                         </div>
                     </div>
                     <div className="row">
@@ -339,7 +339,7 @@ const Categories = () => {
                         <div className="col-md-6 mb-3">
                             <label>Employment Type</label>
                             <input type="text" className="form-control position-relative" />
-                            {/* <img src={img4} alt="" type="option" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} /> */}
+                            <img src={img4} alt="" type="option" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
                         </div>
                     </div>
                     <div className="mb-3">
@@ -383,12 +383,12 @@ const Categories = () => {
                         <div className="col-md-6 mb-3">
                             <label>Company Logo</label>
                             <input className="form-control position-relative" />
-                            {/* <img src={img3} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} /> */}
+                            <img src={img3} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
                         </div>
                         <div className="col-md-6 mb-3">
                             <label>Job Location</label>
                             <input type="text" className="form-control  position-relative" />
-                            {/* <img src={img4} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} /> */}
+                            <img src={img4} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
                         </div>
                     </div>
                     <div className="row">
@@ -399,7 +399,7 @@ const Categories = () => {
                         <div className="col-md-6 mb-3">
                             <label>Employment Type</label>
                             <input type="text" className="form-control position-relative" />
-                            {/* <img src={img4} alt="" type="option" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} /> */}
+                            <img src={img4} alt="" type="option" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
                         </div>
                     </div>
                     <div className="mb-3">
