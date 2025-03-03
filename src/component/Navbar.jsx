@@ -44,9 +44,9 @@ const Navbar = ({ usertoggle, userformtoggle }) => {
             <li className="nav-item"> <Link to="/" className=" text-black  text-decoration-none"> Home </Link> </li>
             <li className="nav-item"> <Link to="/aboutus" className=" text-black  text-decoration-none"> About Us </Link> </li>
             <li className="nav-item"> <Link to="/jobspage" className=" text-black  text-decoration-none"> Jobs </Link> </li>
-            <li className="nav-item"> <Link to="/" className=" text-black  text-decoration-none"> Categories </Link> </li>
+            <li className="nav-item"> <Link to="/Categories" className=" text-black  text-decoration-none"> Categories </Link> </li>
             <li className="nav-item"> <Link to="/Blogspage" className=" text-black  text-decoration-none"> Blogs </Link> </li>
-            <li className="nav-item"> <Link to="/" className=" text-black  text-decoration-none"> Contact Us </Link> </li>
+           
             {/* <li className="nav-item"> <Link to="/contactus" className=" text-black  text-decoration-none"> Contact Us </Link> </li> */}
             <Link to="/contactus" className="text-black text-decoration-none"> Contact Us </Link>
             {/* login to ture is show */}
