@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import job from "../img/Favorites-img/OBJECTS.png";
 import img1 from "../img/Favorites-img/Frame 1732.png";
 
-const Favorites = () => {
+const Favorites = ( ) => {
+
+  const [Favorites, setFavorites] = useState(false);
+  
+
+  const [jobType, setJobType] = useState("");
+  const [location, setLocation] = useState("");
+  const [expirationDate, setExpirationDate] = useState("");
+  const [isExpirationEnabled, setIsExpirationEnabled] = useState(false);
+
+  const handleReset = () => {
+    setJobType("");
+    setLocation("");
+    setExpirationDate("");
+    setIsExpirationEnabled(false);
+  };
+
+
   return (
     <div>
 
@@ -24,12 +41,12 @@ const Favorites = () => {
 
 
 
-          
+
 
           <div className="col-lg-12 col-sm-6 col-md-6 div position-relative">
             <button data-bs-toggle="modal">
               <img
-                className="w-full opt-btn position-absolute"
+                className="w-full opt-btn position-absolute"  onClick={()=> setFavorites(true)} 
                 style={{
                   top: '10px',
                   right: window.innerWidth >= 992 ? '180px' : '50px',
@@ -39,6 +56,115 @@ const Favorites = () => {
               />
             </button>
           </div>
+
+
+
+
+
+          {
+                Favorites ? (
+
+          <div  className="modal show opcations d-block"   style={{
+            maxWidth: "90%",
+            width: "388px",
+            height: "auto",
+            borderRadius: "10px",
+            margin: "auto"
+
+          }}>
+            <div className="modal-dialog modal-dialog-centered">
+              <div className="modal-content p-3">
+                <button type='btn ' className="btn-close ms-auto  "  onClick={()=> setFavorites(false)}></button>
+                <div className="mb-3 d-flex flex-column flex-md-row gap-3">
+                  <label className="form-label  w-50">Job Type</label>
+                  <input
+                    type="text"
+                    className="form-control w-100 w-md-50"
+                    value={jobType}
+                    onChange={(e) => setJobType(e.target.value)}
+                  />
+                </div>
+                <div className="mb-3 d-flex flex-column flex-md-row gap-3">
+                  <label className="form-label w-50">Location</label>
+                  <input
+                    type="text"
+                    className="form-control w-100 w-md-50"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                  />
+                </div>
+                <div className="mb-3 d-flex flex-column flex-md-row gap-3">
+                  <label className="form-label w-50 mt-2">Expiration Date</label>
+                  <input
+                    type="date"
+                    className="form-control w-100 h-50 w-md-50"
+                    value={expirationDate}
+                    onChange={(e) => setExpirationDate(e.target.value)}
+                    disabled={!isExpirationEnabled}
+                  />
+                </div>
+                <div className="d-flex align-items-center gap-2">
+                  <label className="form-check-label">Enable Expiration Date</label>
+                  <div className="form-switch">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      checked={isExpirationEnabled}
+                      onChange={() => setIsExpirationEnabled(!isExpirationEnabled)}
+                    />
+                  </div>
+                </div>
+                <div className="d-flex flex-column justify-content-center flex-md-row gap-3 my-3">
+                  <button className="btn text-white" style={{
+                    width: "121px",
+                    height: "41px",
+                    borderRadius: "4px",
+                    background: "linear-gradient(180deg, #0080A7 0%, #003241 100%)",
+                  }}>
+                    Show Result
+                  </button>
+                  <button className="btn text-white" style={{
+                    width: "121px",
+                    height: "41px",
+                    borderRadius: "4px",
+                    background: "rgba(255, 0, 0, 1)",
+                  }} onClick={handleReset}>
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+                ): null
+              
+              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

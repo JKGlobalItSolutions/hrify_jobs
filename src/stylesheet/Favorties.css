@@ -26,6 +26,15 @@ body{
 
     margin-top: -10px;
 }
+
+
+.opcations{
+    
+    margin-left: 550px !important;
+    margin-top: 120px !important;
+}
+
+
 .Expiry{
     
     background: linear-gradient(180deg, #FF0000 0%, #990000 100%) !important;
