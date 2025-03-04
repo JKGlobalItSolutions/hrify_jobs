@@ -1,5 +1,6 @@
 import React from 'react'
 import img1 from "../img/Favorites-img/Frame 1732.png";
+import { Modal, Button, Form } from "react-bootstrap";
 
 
 
@@ -26,7 +27,7 @@ const notifications = [
     },
 ];
 
-const Notifications = () => {
+const Notifications = ({ show, handleClose }) => {
     return (
         <div>
 
@@ -59,6 +60,69 @@ const Notifications = () => {
                         />
                     </button>
                 </div>
+
+
+
+
+
+                
+              
+      <Modal.Header closeButton>
+        <Modal.Title>Job Filter</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <Form>
+          <Form.Group className="mb-3">
+            <Form.Label>Job Type</Form.Label>
+            <Form.Select>
+              <option>Select Job Type</option>
+              <option>Full-Time</option>
+              <option>Part-Time</option>
+              <option>Contract</option>
+            </Form.Select>
+          </Form.Group>
+
+          <Form.Group className="mb-3">
+            <Form.Label>Salary Range</Form.Label>
+            <Form.Control type="text" placeholder="Enter salary range" />
+          </Form.Group>
+
+          <Form.Group className="mb-3">
+            <Form.Label>Industry</Form.Label>
+            <Form.Select>
+              <option>Select Industry</option>
+              <option>Technology</option>
+              <option>Healthcare</option>
+              <option>Finance</option>
+            </Form.Select>
+          </Form.Group>
+
+          <Form.Group className="mb-3">
+            <Form.Label>Experience Level</Form.Label>
+            <Form.Control type="text" placeholder="Enter experience level" />
+          </Form.Group>
+        </Form>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={handleClose}>Reset</Button>
+        <Button variant="primary">Show Result</Button>
+      </Modal.Footer>
+   
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 <div className="container mt-4">
