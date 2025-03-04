@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "@fortawesome/fontawesome-free/css/all.min.css"; 
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import footer from "../img/Footer-img/Frame 721.png";
 import img1 from "../img/Footer-img/1.png";
 import img2 from "../img/Footer-img/2.png";
@@ -55,16 +55,18 @@ const Footer = () => {
                     </div>
 
                     {/* Logo & Social Icons Section */}
-                    <div className="col-lg-2 text-center mt-5 g-2">
-                        <img src={footer} alt="HRIFY Jobs" className="footer-logo img-fluid mb-3" />
-                        <div className="d-flex justify-content-center my-5 pt-3 gap-3">
-                            <img src={img1} alt="Facebook" className="logo img-fluid" style={{ width: "60px" , height: "60px" }} />
-                            <img src={img2} alt="Twitter" className="logo img-fluid" style={{ width: "60px" , height: "60px" }} />
-                            <img src={img3} alt="LinkedIn" className="logo img-fluid" style={{ width: "60px" , height: "60px" }}/>
-                            <img src={img4} alt="Instagram" className="logo img-fluid" style={{ width: "60px" , height: "60px" }} />
-                            <img src={img5} alt="YouTube" className="logo img-fluid"style={{ width: "60px" , height: "60px" }} />
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-2 text-center mt-5">
+                        <img src={footer} alt="HRIFY Jobs" className="footer-logo img-fluid mb-3 w-100" />
+
+                        <div className="d-flex  justify-content-center my-5 pt-3 gap-2">
+                            <img src={img1} alt="Facebook" className="logo img-fluid" style={{ maxWidth: "50px", height: "auto" }} />
+                            <img src={img2} alt="Twitter" className="logo img-fluid" style={{ maxWidth: "50px", height: "auto" }} />
+                            <img src={img3} alt="LinkedIn" className="logo img-fluid" style={{ maxWidth: "50px", height: "auto" }} />
+                            <img src={img4} alt="Instagram" className="logo img-fluid" style={{ maxWidth: "50px", height: "auto" }} />
+                            <img src={img5} alt="YouTube" className="logo img-fluid" style={{ maxWidth: "50px", height: "auto" }} />
                         </div>
                     </div>
+
                 </div>
 
                 {/* Footer Bottom Text */}

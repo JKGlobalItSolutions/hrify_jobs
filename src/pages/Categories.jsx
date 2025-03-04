@@ -101,14 +101,14 @@ const Categories = () => {
                 <div className="container">
                     <div className="row align-items-center about-shadow">
                         <div className="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-                            <h2 className="fw-bold mb-3">Find Your Dream Job Today!</h2>
+                            <h2 className="fw-bold mb-3 text-start">Find Your Dream Job Today!</h2>
                             <p className="dream_job_para mx-auto mb-4">
                                 Explore job opportunities across various industries and take the next step in your career. Browse by category and apply with ease!
                             </p>
-                            <button className="dream_job_btn btn btn-primary">Get Started</button>
+                            <button className="dream_job_btn fs-5">Get Started</button>
                         </div>
-                        <div className="col-12 col-lg-6 text-center">
-                            <img src={img2} alt="Job Search" className="img-fluid" style={{ maxWidth: '500px' }} />
+                        <div className="col-12 col-lg-6  Categories_hero_img   text-center">
+                            <img src={img2} alt="Job Search" className="img-fluid " style={{ maxWidth: '500px' }} />
                         </div>
                     </div>
                 </div>
@@ -128,17 +128,17 @@ const Categories = () => {
 
                     <div className="col-12 col-md-6">
                         <div className="d-flex align-items-center gap-3">
-                            <div className="input-group flex-grow-1">
+                            <div className="input-group flex-grow-1 position-relative">
                                 <input
                                     type="text"
-                                    className="form-control search-input"
-                                    placeholder="Enter Job Title, Keywords, Company Name"
+                                    className="form-control search-input rounded-pill"
+                                    placeholder=""
                                     aria-label="Search"
                                 />
-                                <span className="input-group-text"><i className="bi bi-search"></i></span>
+                                <span className=" position-absolute fs-3 search_btn mt-2"><i className="bi bi-search"></i></span>
                             </div>
                             <img
-                                className="opt-btn img-fluid"
+                                className="opt-btn img-fluid mt-1"
                                 style={{ width: '40px', cursor: 'pointer' }}
                                 src={img1}
                                 alt="Options"
@@ -200,8 +200,8 @@ const Categories = () => {
                 <div className="container-fluid mt-4">
                     <div className="row g-3">
                         {jobs.map((job) => (
-                            <div key={job.id} className="col-lg-3 col-md-6 col-sm-12">
-                                <div className="card shadow-sm mb-4 gap-1" style={{ width: "100%", height: "423px" }}>
+                            <div key={job.id} className="col-lg-3 col-md-6 col-sm-12 ">
+                                <div className="card shadow-sm mb-5  gap-2" style={{ width: "100%", height: "423px" }}>
                                     <div className="d-flex p-3 justify-content-between align-items-start">
                                         <small className="text-muted">Posted - {job.posted}</small>
                                         <i className="bi bi-heart"></i>
@@ -237,37 +237,29 @@ const Categories = () => {
                 </div>
 
                 <div className="container-fluid mt-4">
-                    <div className="row ">
+                    <div className="row">
                         {jobs1.map((job) => (
-                            <div key={job.id} className="col-lg-3 col-md-6 col-sm-12">
-                                <div className="card shadow-sm mb-4 gap-1" style={{ width: "100%", height: "423px" }}>
+                            <div key={job.id} className="col-12 col-sm-6]mt-sm-3 col-md-4 col-lg-3">
+                                <div className="card shadow-sm mb-4 d-flex flex-column h-100">
                                     <div className="d-flex p-3 justify-content-between align-items-start">
                                         <small className="text-muted">Posted - {job.posted}</small>
                                         <i className="bi bi-heart"></i>
                                     </div>
                                     <div className="text-center my-2 company_log">
                                         <div className="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto"
-                                            style={{ width: "150px", height: "150px" }}>
+                                            style={{ width: "100px", height: "100px" }}>
                                             <span className="text-muted">Company Logo</span>
                                         </div>
                                     </div>
-                                    <div className="d-flex ms-4">
-                                        <div className="d-grid gap-2">
-                                            <strong>Job Title</strong>
-                                            <strong>Company Name</strong>
-                                            <strong>Location</strong>
-                                            <strong>Salary</strong>
-                                        </div>
-                                        <div className="d-grid ms-3 pt-0">
-                                            <p className='fs-6'>{job.title}</p>
-                                            <p>{job.company}</p>
-                                            <p>{job.location}</p>
-                                            <p className='fs-6'>{job.salary}</p>
-                                        </div>
+                                    <div className="px-3 text-center text-md-start">
+                                        <strong>Job Title:</strong> <p className="mb-1">{job.title}</p>
+                                        <strong>Company Name:</strong> <p className="mb-1">{job.company}</p>
+                                        <strong>Location:</strong> <p className="mb-1">{job.location}</p>
+                                        <strong>Salary:</strong> <p className="mb-1">{job.salary}</p>
                                     </div>
-                                    <div className="d-flex flex-column flex-md-row justify-content-between ">
-                                        <button className="dream_job_cardbtn1 w-100 ">View Job</button>
-                                        <button className="dream_job_cardbtn2 w-100 ">Apply Now</button>
+                                    <div className="mt-auto d-flex flex-column flex-md-row gap-2 p-3">
+                                        <button className="dream_job_cardbtn1 w-100">View Job</button>
+                                        <button className="dream_job_cardbtn2 w-100">Apply Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -322,13 +314,22 @@ const Categories = () => {
                     <div className="row">
                         <div className="col-md-6 mb-3">
                             <label>Company Logo</label>
-                            <input className="form-control position-relative" />
-                            <img src={img3} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
+                           
+                            <input type="file" class="form-control  form-control position-relative" />
+                            <img src={img3} alt="" type="file" for="" className=" position-absolute file_logo  " style={{ maxWidth: '30px' }} />
                         </div>
                         <div className="col-md-6 mb-3">
                             <label>Job Location</label>
                             <input type="text" className="form-control  position-relative" />
-                            <img src={img4} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
+                            <div class="dropdown">
+                                <img src={img4} alt="false" type="btn" data-bs-toggle="dropdown" className=" position-absolute file_logo dropdown-toggle" style={{ maxWidth: '30px' }} />
+
+                                <ul class="dropdown-menu w-75">
+                                    <li><a class="dropdown-item" href="#">On-site</a></li>
+                                    <li><a class="dropdown-item" href="#">Remote</a></li>
+                                    <li><a class="dropdown-item" href="#">Hybrid</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className="row">
@@ -339,12 +340,21 @@ const Categories = () => {
                         <div className="col-md-6 mb-3">
                             <label>Employment Type</label>
                             <input type="text" className="form-control position-relative" />
-                            <img src={img4} alt="" type="option" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
+                            <div class="dropdown">
+                                <img src={img4} alt="false" type="btn" data-bs-toggle="dropdown" className=" position-absolute file_logo dropdown-toggle" style={{ maxWidth: '30px' }} />
+                                <ul class="dropdown-menu w-75 ">
+                                    <li><a class="dropdown-item" href="#">Full-Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Part-Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Contract</a></li>
+                                    <li><a class="dropdown-item" href="#">Internship</a></li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
                     <div className="mb-3">
                         <label>Application Deadline</label>
-                        <input type="date" className="form-control date_Experience" style={{width: "630px"}} />
+                        <input type="date" className="form-control date_Experience" style={{ width: "630px" }} />
                     </div>
 
                     <h4 className="mb-3  fw-bolder fs-3" style={{ color: " #0080A7" }}>Job Description</h4>
@@ -362,10 +372,20 @@ const Categories = () => {
                             <input type="text" className="form-control" />
                         </div>
                     </div>
-                    <div className="mb-3">
-                        <label>Minimum Experience</label>
-                        <input type="text" className="form-control date_Experience"style={{width: "630px"}} />
-                    </div>
+                    <div className="col-md-6 mb-3">
+                            <label>Minimum Experience</label>
+                            <input type="btn" alt="false" data-bs-toggle="dropdown" className="form-control position-relative dropdown-toggle" />
+                            <div class="dropdown">
+                                
+                                <ul class="dropdown-menu w-75 ">
+                                    <li><a class="dropdown-item" href="#">Fresher</a></li>
+                                    <li><a class="dropdown-item" href="#">1-3 Years </a></li>
+                                    <li><a class="dropdown-item" href="#">3-5 Years</a></li>
+                                    <li><a class="dropdown-item" href="#">5+ Years</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
 
                     <h4 className="mb-3 fw-bolder fs-3" style={{ color: " #0080A7" }}>Application Preferences</h4>
                     <div className="row">
@@ -380,15 +400,24 @@ const Categories = () => {
 
                     </div>
                     <div className="row">
-                        <div className="col-md-6 mb-3">
+                    <div className="col-md-6 mb-3">
                             <label>Company Logo</label>
-                            <input className="form-control position-relative" />
-                            <img src={img3} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
+                           
+                            <input type="file" class="form-control  form-control position-relative" />
+                            <img src={img3} alt="" type="file" for="" className=" position-absolute file_logo  " style={{ maxWidth: '30px' }} />
                         </div>
                         <div className="col-md-6 mb-3">
                             <label>Job Location</label>
                             <input type="text" className="form-control  position-relative" />
-                            <img src={img4} alt="" type="file" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
+                            <div class="dropdown">
+                                <img src={img4} alt="false" type="btn" data-bs-toggle="dropdown" className=" position-absolute file_logo dropdown-toggle" style={{ maxWidth: '30px' }} />
+
+                                <ul class="dropdown-menu w-75">
+                                    <li><a class="dropdown-item" href="#">On-site</a></li>
+                                    <li><a class="dropdown-item" href="#">Remote</a></li>
+                                    <li><a class="dropdown-item" href="#">Hybrid</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className="row">
@@ -399,12 +428,21 @@ const Categories = () => {
                         <div className="col-md-6 mb-3">
                             <label>Employment Type</label>
                             <input type="text" className="form-control position-relative" />
-                            <img src={img4} alt="" type="option" className=" position-absolute file_logo" style={{ maxWidth: '30px' }} />
+                            <div class="dropdown">
+                                <img src={img4} alt="false" type="btn" data-bs-toggle="dropdown" className=" position-absolute file_logo dropdown-toggle" style={{ maxWidth: '30px' }} />
+                                <ul class="dropdown-menu w-75 ">
+                                    <li><a class="dropdown-item" href="#">Full-Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Part-Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Contract</a></li>
+                                    <li><a class="dropdown-item" href="#">Internship</a></li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
                     <div className="mb-3">
                         <label>Application Deadline</label>
-                        <input type="date" className="form-control date_Experience" style={{width: "630px"}} />
+                        <input type="date" className="form-control date_Experience" style={{ width: "630px" }} />
                     </div>
 
 
