@@ -200,7 +200,7 @@ const Categories = () => {
                 <div className="container-fluid mt-4">
                     <div className="row g-3">
                         {jobs.map((job) => (
-                            <div key={job.id} className="col-lg-3 col-md-6 col-sm-12 ">
+                            <div key={job.id} className=" col-lg-3 col-md-6 col-sm-12 ">
                                 <div className="card shadow-sm mb-5  gap-2" style={{ width: "100%", height: "423px" }}>
                                     <div className="d-flex p-3 justify-content-between align-items-start">
                                         <small className="text-muted">Posted - {job.posted}</small>
@@ -237,29 +237,37 @@ const Categories = () => {
                 </div>
 
                 <div className="container-fluid mt-4">
-                    <div className="row">
+                    <div className="row g-2">
                         {jobs1.map((job) => (
-                            <div key={job.id} className="col-12 col-sm-6]mt-sm-3 col-md-4 col-lg-3">
-                                <div className="card shadow-sm mb-4 d-flex flex-column h-100">
+                            <div key={job.id} className="  col-lg-3 col-md-6 col-sm-12 ">
+                                <div className="card shadow-sm mb-5  gap-2" style={{ width: "100%", height: "423px" }}>
                                     <div className="d-flex p-3 justify-content-between align-items-start">
                                         <small className="text-muted">Posted - {job.posted}</small>
                                         <i className="bi bi-heart"></i>
                                     </div>
                                     <div className="text-center my-2 company_log">
                                         <div className="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto"
-                                            style={{ width: "100px", height: "100px" }}>
+                                            style={{ width: "150px", height: "150px" }}>
                                             <span className="text-muted">Company Logo</span>
                                         </div>
                                     </div>
-                                    <div className="px-3 text-center text-md-start">
-                                        <strong>Job Title:</strong> <p className="mb-1">{job.title}</p>
-                                        <strong>Company Name:</strong> <p className="mb-1">{job.company}</p>
-                                        <strong>Location:</strong> <p className="mb-1">{job.location}</p>
-                                        <strong>Salary:</strong> <p className="mb-1">{job.salary}</p>
+                                    <div className="d-flex ms-4">
+                                        <div className="d-grid gap-2">
+                                            <strong>Job Title</strong>
+                                            <strong>Company Name</strong>
+                                            <strong>Location</strong>
+                                            <strong>Salary</strong>
+                                        </div>
+                                        <div className="d-grid ms-3 pt-0">
+                                            <p>{job.title}</p>
+                                            <p>{job.company}</p>
+                                            <p>{job.location}</p>
+                                            <p className='fs-6'>{job.salary}</p>
+                                        </div>
                                     </div>
-                                    <div className="mt-auto d-flex flex-column flex-md-row gap-2 p-3">
-                                        <button className="dream_job_cardbtn1 w-100">View Job</button>
-                                        <button className="dream_job_cardbtn2 w-100">Apply Now</button>
+                                    <div className="d-flex flex-column flex-md-row justify-content-between ">
+                                        <button className="dream_job_cardbtn1 w-100 ">View Job</button>
+                                        <button className="dream_job_cardbtn2 w-100 ">Apply Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +384,7 @@ const Categories = () => {
                             <label>Minimum Experience</label>
                             <input type="btn" alt="false" data-bs-toggle="dropdown" className="form-control position-relative dropdown-toggle" />
                             <div class="dropdown">
-                                
+
                                 <ul class="dropdown-menu w-75 ">
                                     <li><a class="dropdown-item" href="#">Fresher</a></li>
                                     <li><a class="dropdown-item" href="#">1-3 Years </a></li>

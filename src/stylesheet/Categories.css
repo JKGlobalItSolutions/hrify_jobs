@@ -119,9 +119,7 @@ border: none;
     }  
 }
 
-.img-fluid{
-  ma
-}
+
 
 
 .email_input {
@@ -423,3 +421,38 @@ border-radius: 30px !important;
             width: 100% !important;
         }
     }
+
+
+
+/* 
+    <div className="container-fluid mt-4">
+    <div className="row g-3">
+        {jobs.map((job) => (
+            <div key={job.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div className="card shadow-sm mb-4 d-flex flex-column h-100">
+                    <div className="d-flex p-3 justify-content-between align-items-start">
+                        <small className="text-muted">Posted - {job.posted}</small>
+                        <i className="bi bi-heart"></i>
+                    </div>
+                    <div className="text-center my-2 company_log">
+                        <div 
+                            className="rounded-circle bg-light d-flex align-items-center justify-content-center mx-auto"
+                            style={{ width: "120px", height: "120px" }}>
+                            <span className="text-muted">Company Logo</span>
+                        </div>
+                    </div>
+                    <div className="px-3">
+                        <strong>Job Title:</strong> <p>{job.title}</p>
+                        <strong>Company:</strong> <p>{job.company}</p>
+                        <strong>Location:</strong> <p>{job.location}</p>
+                        <strong>Salary:</strong> <p>{job.salary}</p>
+                    </div>
+                    <div className="d-flex flex-column flex-md-row justify-content-between mt-auto">
+                        <button className="dream_job_cardbtn1 w-100 mb-2 mb-md-0 me-md-2">View Job</button>
+                        <button className="dream_job_cardbtn2 w-100">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>
+</div> */
