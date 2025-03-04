@@ -368,11 +368,11 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
             {/* vacant roles */}
 
 
-            <div className="container mb-5">
+            <div className="container ">
 
                 <div className="row">
                     {/* Text Container */}
-                    <div className="text-container mb-4 text-center">
+                    <div className="text-container  text-center">
                         <div className="line"></div>
                         <div className="text">Vacant Roles</div>
                         <div className="line"></div>
@@ -382,9 +382,9 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
                     <div className="container text-center mt-5">
                         <div className="row g-3 vacant_rowsec">
                             {/* Full Time */}
-                            <div className="col-6 col-md-3">
-                                <div className="vacant-card card p-3 bg-primary text-white">
-                                    <img src={fram1} alt="Full Time" className="img-fluid card-img" />
+                            <div className="col-6 col-md-3 ">
+                                <div className="vacant-card card p-3 bg-primary text-white ">
+                                    <img src={fram1} alt="Full Time" className="img-fluid card-img mt-3" />
                                     <h5 className="mt-2">Full Time</h5>
                                 </div>
                             </div>
@@ -392,7 +392,7 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
                             {/* Part Time */}
                             <div className="col-6 col-md-3">
                                 <div className="vacant-card card p-3 bg-primary text-white">
-                                    <img src={fram2} alt="Part Time" className="img-fluid card-img" />
+                                    <img src={fram2} alt="Part Time" className="img-fluid card-img mt-3" />
                                     <h5 className="mt-2">Part Time</h5>
                                 </div>
                             </div>
@@ -400,7 +400,7 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
                             {/* Contract */}
                             <div className="col-6 col-md-3">
                                 <div className="vacant-card card p-3 bg-primary text-white">
-                                    <img src={fram3} alt="Contract" className="img-fluid card-img" />
+                                    <img src={fram3} alt="Contract" className="img-fluid card-img mt-3" />
                                     <h5 className="mt-2">Contract</h5>
                                 </div>
                             </div>
@@ -408,7 +408,7 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
                             {/* Temporary */}
                             <div className="col-6 col-md-3">
                                 <div className="vacant-card card p-3 bg-primary text-white">
-                                    <img src={fram4} alt="Temporary" className="img-fluid card-img" />
+                                    <img src={fram4} alt="Temporary" className="img-fluid card-img mt-3" />
                                     <h5 className="mt-2">Temporary</h5>
                                 </div>
                             </div>
@@ -453,10 +453,10 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
                             { img: t_c9, title: "Sales & Marketing" },
                             { img: t_c10, title: "E-Commerce" }
                         ].map((category, index) => (
-                            <div key={index} className="col-xl-2 col-lg-2 col-md-3 col-6 text-center mb-4">
+                            <div key={index} className="col-xl-2 col-lg-2 col-md-3 col-6 text-center mt-5">
                                 <div className="category-card">
                                     <img src={category.img} alt={category.title} className="img-fluid" />
-                                    <span className="category-text">{category.title}</span>
+                                    <span className="category-text mb-3">{category.title}</span>
                                 </div>
                             </div>
                         ))}
@@ -525,7 +525,7 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
                                     <div className="col-12 col-md-4 text-center">
                                         <img src={theni} className="city_img" alt="Theni" />
                                         <br />
-                                        <button type="button" className="btn  city_btn">Theni</button>
+                                        <button type="button" className=" city_btn">Theni</button>
                                     </div>
                                     {/* These will be hidden on small screens */}
                                     <div className="col-md-4 text-center d-none d-md-block">
@@ -548,7 +548,7 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
                                     <div className="col-12 col-md-4 text-center">
                                         <img src={chennaiing} className="city_img" alt="Chennai" />
                                         <br />
-                                        <button type="button" className="  city_btn">Chennai</button>
+                                        <button type="button" className="city_btn">Chennai</button>
                                     </div>
                                     {/* These will be hidden on small screens */}
                                     <div className="col-md-4 text-center d-none d-md-block">
@@ -692,12 +692,12 @@ const Herosection = ({ isvisible, setisvisible , isvisibleform ,setisvisibleform
 
                     </div>
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mt-5 ">
                         <img src={footertopimg} className="img-fluid" alt="" />
                     </div>
                 </div>
 
-            </div>
+            </div> 
 
             {/* ------------------------------------------------------------------------------------------------------------- */}
 

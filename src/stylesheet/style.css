@@ -1,5 +1,5 @@
-
-html, body  {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
@@ -8,12 +8,14 @@ html, body  {
 
 
 @media (max-width:500px) {
-    html, body  {
+
+    html,
+    body {
         overflow-x: hidden;
         width: 100%;
         max-width: 100%;
     }
-     
+
 }
 
 
@@ -29,7 +31,7 @@ html, body  {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 40px;
-  
+
 }
 
 
@@ -97,7 +99,7 @@ html, body  {
 /* Tablet Screen Styles */
 @media (min-width: 600px) and (max-width: 1024px) {
     .herosectexr_img {
-      margin-left: 180px;
+        margin-left: 180px;
     }
 }
 
@@ -118,9 +120,12 @@ html, body  {
 
 @media (max-width: 576px) {
     .dropdown-btn {
-        padding: 16px 28px; /* Even bigger padding */
-        font-size: 20px; /* Bigger font size */
-        width: 100%; /* Full width for mobile */
+        padding: 16px 28px;
+        /* Even bigger padding */
+        font-size: 20px;
+        /* Bigger font size */
+        width: 100%;
+        /* Full width for mobile */
     }
 }
 
@@ -255,7 +260,8 @@ html, body  {
     border: none;
     font-size: 16px;
     text-align: center;
-    transition: none; /* Disable smooth transitions */
+    transition: none;
+    /* Disable smooth transitions */
 }
 
 /* Apply unique colors */
@@ -271,14 +277,19 @@ html, body  {
 /* Remove hover effects */
 .card-btn:hover,
 .card-btn1:hover {
-    background-color: inherit !important; /* Keeps the original background */
-    color: inherit !important; /* Keeps the original text color */
-    box-shadow: none !important; /* No shadow effect */
-    cursor: default; /* Normal cursor */
+    background-color: inherit !important;
+    /* Keeps the original background */
+    color: inherit !important;
+    /* Keeps the original text color */
+    box-shadow: none !important;
+    /* No shadow effect */
+    cursor: default;
+    /* Normal cursor */
 }
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
+
     .card-btn,
     .card-btn1 {
         width: 250px;
@@ -288,9 +299,10 @@ html, body  {
 }
 
 @media (max-width: 768px) {
+
     .card-btn,
     .card-btn1 {
-        width: 90%; 
+        width: 90%;
         height: 50px;
         font-size: 16px;
     }
@@ -327,6 +339,10 @@ html, body  {
 /* -------------------------------------------------- */
 
 /* vacant  */
+
+.vacant_rowsec {
+    height: 60px !important;
+}
 
 .vacant-card {
     width: 100%;
@@ -365,6 +381,11 @@ html, body  {
         width: 50px;
         height: 50px;
     }
+
+    .vacant_rowsec {
+        height: 130px !important;
+    }
+
 }
 
 
@@ -764,8 +785,8 @@ display: flex;
 
 
 
- /* Main Container */
- .hidden_box {
+/* Main Container */
+.hidden_box {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -803,13 +824,15 @@ display: flex;
     cursor: pointer;
     padding: 10px;
 }
+
 .close_btn img {
     width: 30px;
     height: 30px;
 }
 
 /* Registration Buttons */
-.hiddenlogin_btn, .h_reg_btn {
+.hiddenlogin_btn,
+.h_reg_btn {
     width: 100%;
     max-width: 350px;
     font-size: 18px;
@@ -835,6 +858,7 @@ display: flex;
     color: #0231FF;
     font-weight: 500;
 }
+
 .h_reg_btn:hover {
     background-color: black;
     color: white;
@@ -910,13 +934,13 @@ display: flex;
     font-size: 16px;
     padding: 12px;
     background-color: #0080A7 !important;
-    color: white !important; 
-    border: 1px solid rgb(173, 169, 169); 
+    color: white !important;
+    border: 1px solid rgb(173, 169, 169);
     /* transition: background-color 0.3s ease;  */
 }
 
 .list-group-item:hover {
-background-color: white !important;
+    background-color: white !important;
 }
 
 /* Mobile-first default styling */
@@ -927,7 +951,8 @@ background-color: white !important;
         margin: auto;
         padding: 10px;
         position: absolute;
-        margin-left: 0; /* Reset margin for mobile */
+        margin-left: 0;
+        /* Reset margin for mobile */
     }
 
     .home_btn {
